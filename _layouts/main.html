@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " en-US" }}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title | default: site.title | default: site.github.repository_name }}</title>
+<!-- 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" 
+        type="text/css" crossorigin> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <!-- <header class="page-header" role="banner">
+        <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}
+        </h1>
+        <h2 class="project-tagline">{{ page.description | default: site.description | default:
+            site.github.project_tagline }}</h2>
+        {% if site.github.is_project_page %}
+        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+        {% endif %}
+        {% if site.show_downloads %}
+        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
+        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
+        {% endif %}
+    </header> -->
+    {% include nav.html %}
+    <header id="header" class="header ">
+        <div class="header-content container mx-auto max-w-7xl">
+            <div class="container ">
+                <div class="flex flex-row">
+                    <div class="basis-1/2 col-lg-6 py-24 col-xl-5">
+                        <div class="text-container">
+                            <h1 class="max-w-2xl text-4xl font-bold tracking-tight text-white sm:text-6xl lg:col-span-2 xl:col-auto">Village Fund POS</h1>
+                            <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
+                                <p class="text-lg leading-8 text-white">Shop management system in The Thailand Pracharath project.</p>
+                                
+                            </div>
+                            <div class="mt-10 flex gap-x-6">
+                                <a href="#" ><img src="/assets/images/get-google-play-icon.png" /></a>
+                                <a href="#" ><img src="/assets/images/get-app-store-icon.png" /></a>
+                            </div>
+                        </div> 
+                    </div> 
+                    <div class="basis-1/2 col-lg-6 col-xl-7">
+                        <div class="image-container">
+                            <div class="img-wrapper">
+                                <img class="img-fluid" src="assets/images/cover-vf-pos.png" alt="alternative">
+                            </div> 
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </header>
+        
+    <svg class="header-frame" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 310">
+        <defs>
+            <style>
+                .cls-1 {
+                    fill: #5f4def;
+                }
+            </style>
+        </defs>
+        <title>header-frame</title>
+        <path class="cls-1" d="M0,283.054c22.75,12.98,53.1,15.2,70.635,14.808,92.115-2.077,238.3-79.9,354.895-79.938,59.97-.019,106.17,18.059,141.58,34,47.778,21.511,47.778,21.511,90,38.938,28.418,11.731,85.344,26.169,152.992,17.971,68.127-8.255,115.933-34.963,166.492-67.393,37.467-24.032,148.6-112.008,171.753-127.963,27.951-19.26,87.771-81.155,180.71-89.341,72.016-6.343,105.479,12.388,157.434,35.467,69.73,30.976,168.93,92.28,256.514,89.405,100.992-3.315,140.276-41.7,177-64.9V0.24H0V283.054Z">
+        </path>
+    </svg>
+    <div>
+        <div>
+            <main id="content" class="main-content" role="main">
+                {{ content }}
+            </main>
+        </div>
+    </div>
+    {% include footer.html %}
+</body>
+
+</html>

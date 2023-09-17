@@ -1,4 +1,7 @@
-**Privacy Policy**
+---
+layout: page
+title: Privacy Policy
+---
 
 SMLSoft.,Ltd built the Village Fund POS app as a Free app. This SERVICE is provided by SMLSoft.,Ltd at no cost and is intended for use as is.
 
