@@ -91,7 +91,7 @@ description:
         <h3 class="text-base font-semibold leading-7 text-gray-900">Technical support</h3>
         <p class="mt-2 leading-7 text-gray-600"></p>
         <p class="mt-4">
-          <a href="#" class="text-sm font-semibold leading-6 text-indigo-600">Join our Discord <span aria-hidden="true">&rarr;</span></a>
+          <a href="https://discord.gg/HDfFMGq4" class="text-sm font-semibold leading-6 text-indigo-600">Join our Discord <span aria-hidden="true">&rarr;</span></a>
         </p>
       </div>
     </div>
